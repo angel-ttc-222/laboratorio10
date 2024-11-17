@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio 10. Parte 4</title>
+</head>
+<body>
+    <h2>Parte 4. Ver en consola</h2>
+    <script>
+        let nombre = prompt("Ingrese su nombre: ");
+        let edad = parseInt(prompt("Ingrese su edad: "));
+        let esEstudiante = prompt("Eres estudiante? si/no").toLocaleLowerCase()=="si";
+        
+        console.log("Su nombre es " + nombre + " y su edad es " + edad + " años.");
+
+
+        if (edad > 18) {
+            console.log("Usted es mayor de edad.")
+        } else {
+            console.log("Usted NO es mayor edad.")
+        }
+
+        if (esEstudiante) {
+            console.log("Tiene descuento por ser estudiante")
+        } else {
+            console.log("Usted no tiene descuento")
+        }
+
+    </script>
+
+</body>
+</html>
